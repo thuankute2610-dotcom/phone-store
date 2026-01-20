@@ -6,3 +6,61 @@ td { padding: 15px; border-bottom: 1px solid #eee; text-align: center; }
 #tongTien { color: #d70018; font-size: 2rem; }
 .btn-primary { background: #d70018; color: white; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-weight: bold; }
 .btn-secondary { color: #666; text-decoration: none; margin-right: 20px; }
+/* Container chứa các nút */
+.cart-buttons {
+    display: flex;
+    justify-content: space-between; /* Đẩy 2 nút ra 2 phía */
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+/* Nút Tiếp tục chọn máy */
+.btn-continue {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    background-color: transparent;
+    color: #007bff; /* Màu xanh chủ đạo của store */
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-continue .icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào nút Tiếp tục */
+.btn-continue:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-continue:hover .icon {
+    transform: translateX(-5px); /* Mũi tên nhích sang trái khi hover */
+}
+
+/* Nút Xác nhận đơn hàng (Cập nhật để đồng bộ) */
+.btn-primary {
+    background: linear-gradient(135deg, #d70018 0%, #ff4d4d 100%);
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(215, 0, 24, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(215, 0, 24, 0.4);
+}
