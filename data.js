@@ -1,0 +1,5 @@
+const danhSachHoa = [
+    { id: 1, ten: "iPhone 15 Pro Max", gia: 29990000, hinh: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png", moTa: "Khung viền Titan, chip A17 Pro mạnh mẽ nhất thế giới." },
+    { id: 2, ten: "Samsung S24 Ultra", gia: 26500000, hinh: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-timultra-22.png", moTa: "Camera 200MP, tích hợp quyền năng Galaxy AI." },
+    { id: 3, ten: "Xiaomi 14 Ultra", gia: 21990000, hinh: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-ultra.jpg", moTa: "Ống kính Leica cao cấp, sạc siêu nhanh 90W." }
+];

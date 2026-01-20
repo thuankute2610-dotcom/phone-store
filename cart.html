@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart-page.css">
+</head>
+<body>
+    <div class="cart-page-container">
+        <h1>🛒 Giỏ hàng công nghệ</h1>
+        <table>
+            <thead><tr><th>Sản phẩm</th><th>Giá</th><th>Số lượng</th><th>Tổng</th><th>Xóa</th></tr></thead>
+            <tbody id="gioHangBody"></tbody>
+        </table>
+        <div class="cart-summary">
+            <h2 id="tongTien">Tổng tiền: 0 ₫</h2>
+            <div class="cart-buttons">
+                <a href="index.html" class="btn-secondary">Tiếp tục chọn máy</a>
+                <button id="btnThanhToan" class="btn-primary" onclick="thanhToan()">Xác nhận đơn hàng</button>
+            </div>
+        </div>
+    </div>
+<div id="qrModal" class="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8);">
+    <div style="background:white; margin:10% auto; padding:20px; width:350px; text-align:center; border-radius:15px; position:relative;">
+        <span onclick="document.getElementById('qrModal').style.display='none'" style="position:absolute; right:15px; top:10px; cursor:pointer; font-size:24px;">&times;</span>
+        <h3>Quét mã để thanh toán</h3>
+        <p id="qrAmount" style="color:#d70018; font-weight:bold;"></p>
+        <img id="qrImage" src="" alt="QR Thanh Toan" style="width:100%; border-radius:10px; border: 1px solid #ddd;">
+        <p style="font-size:12px; color:#666; margin-top:10px;">Vui lòng nhập nội dung: <b>THANHTOAN [ID_DONHANG]</b></p>
+        <button onclick="hoanTatThanhToan()" style="background:#28a745; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; margin-top:15px; width:100%;">Tôi đã chuyển khoản xong</button>
+    </div>
+</div>
+
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    <script>window.onload = hienThiGioHang;</script>
+</body>
+</html>
